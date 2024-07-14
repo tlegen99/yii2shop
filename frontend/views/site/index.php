@@ -4,49 +4,85 @@
 
 $this->title = 'My Yii Application';
 ?>
-<div class="site-index">
-    <div class="p-5 mb-4 bg-transparent rounded-3">
-        <div class="container-fluid py-5 text-center">
-            <h1 class="display-4">Congratulations!</h1>
-            <p class="fs-5 fw-light">You have successfully created your Yii-powered application.</p>
-            <p><a class="btn btn-lg btn-success" href="https://www.yiiframework.com">Get started with Yii</a></p>
-        </div>
-    </div>
 
-    <div class="body-content">
-
+<!-- Category slider area start -->
+<div class="category-slider-area">
+    <div class="container">
         <div class="row">
-            <div class="col-lg-4">
-                <h2>Heading</h2>
-
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                    fugiat nulla pariatur.</p>
-
-                <p><a class="btn btn-outline-secondary" href="https://www.yiiframework.com/doc/">Yii Documentation &raquo;</a></p>
+            <div class="col-md-3">
+                <?= $this->render('../layouts/_partials/category-menu'); ?>
             </div>
-            <div class="col-lg-4">
-                <h2>Heading</h2>
-
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                    fugiat nulla pariatur.</p>
-
-                <p><a class="btn btn-outline-secondary" href="https://www.yiiframework.com/forum/">Yii Forum &raquo;</a></p>
-            </div>
-            <div class="col-lg-4">
-                <h2>Heading</h2>
-
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                    fugiat nulla pariatur.</p>
-
-                <p><a class="btn btn-outline-secondary" href="https://www.yiiframework.com/extensions/">Yii Extensions &raquo;</a></p>
+            <div class="col-md-9">
+                <!-- slider -->
+                <div class="slider-area">
+                    <div class="bend niceties preview-1">
+                        <div id="ensign-nivoslider" class="slides">
+                            <img src="images/sliders/slider-1/bg1.jpg" alt="Malias" title="#slider-direction-1"/>
+                            <img src="images/sliders/slider-1/bg2.jpg" alt="Malias" title="#slider-direction-2"/>
+                            <img src="images/sliders/slider-1/bg3.jpg" alt="Malias" title="#slider-direction-3"/><!--
+									<img src="img/sliders/slider-1/bg4.jpg" alt="" title="#slider-direction-4"/>  -->
+                        </div>
+                        <!-- direction 1 -->
+                        <div id="slider-direction-1" class="t-lfr slider-direction">
+                            <div class="slider-progress"></div>
+                            <!-- layer 1 -->
+                            <div class="layer-1-1 ">
+                                <h1 class="title1">LUMIA 888 DESIGN</h1>
+                            </div>
+                            <!-- layer 2 -->
+                            <div class="layer-1-2">
+                                <p class="title2">Elegant design for business</p>
+                            </div>
+                            <!-- layer 3 -->
+                            <div class="layer-1-3">
+                                <h2 class="title3">$966.82</h2>
+                            </div>
+                            <!-- layer 4 -->
+                            <div class="layer-1-4">
+                                <a href="#" class="title4">shopping now</a>
+                            </div>
+                        </div>
+                        <!-- direction 2 -->
+                        <div id="slider-direction-2" class="slider-direction">
+                            <div class="slider-progress"></div>
+                            <!-- layer 1 -->
+                            <div class="layer-2-1">
+                                <h1 class="title1">WATERPROOF SMARTPHONE</h1>
+                            </div>
+                            <!-- layer 2 -->
+                            <div class="layer-2-2">
+                                <p class="title2">RODUCTS ARE EYE-CATCHING DESIGN. YOU CAN TAKE PHOTOS EVEN WHEN Y</p>
+                            </div>
+                            <!-- layer 3 -->
+                            <div class="layer-2-3">
+                                <a href="#" class="title3">shopping now</a>
+                            </div>
+                        </div>
+                        <!-- direction 3 -->
+                        <div id="slider-direction-3" class="slider-direction">
+                            <div class="slider-progress"></div>
+                            <!-- layer 1 -->
+                            <div class="layer-3-1">
+                                <h2 class="title1">BUY AIR LACOTE</h2>
+                            </div>
+                            <!-- layer 2 -->
+                            <div class="layer-3-2">
+                                <h1 class="title2">SUPER TABLET, SUPER GIFT</h1>
+                            </div>
+                            <!-- layer 3 -->
+                            <div class="layer-3-3">
+                                <p class="title3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et.</p>
+                            </div>
+                            <!-- layer 4 -->
+                            <div class="layer-3-4">
+                                <a href="#" class="title4">shopping now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- slider end-->
             </div>
         </div>
-
     </div>
 </div>
+<!-- Category slider area End -->
