@@ -16,6 +16,9 @@ use yii\db\ActiveRecord;
  */
 class CategoryProduct extends ActiveRecord
 {
+    public const STATUS_ON = 'on';
+    public const STATUS_OFF = 'off';
+
     /**
      * {@inheritdoc}
      */
@@ -54,7 +57,7 @@ class CategoryProduct extends ActiveRecord
      *
      * @return \yii\db\ActiveQuery
      */
-    public function getParent()
+    public function getParent(): \yii\db\ActiveQuery
     {
         return $this->hasOne(CategoryProduct::class, ['id' => 'parent_id']);
     }
@@ -64,8 +67,13 @@ class CategoryProduct extends ActiveRecord
      *
      * @return \yii\db\ActiveQuery
      */
-    public function getCategories()
+    public function getChild(): \yii\db\ActiveQuery
     {
         return $this->hasMany(CategoryProduct::class, ['parent_id' => 'id']);
+    }
+
+    public static function find()
+    {
+        return new CategoryProductQuery(get_called_class());
     }
 }

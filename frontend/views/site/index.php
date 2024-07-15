@@ -1,6 +1,7 @@
 <?php
-
 /** @var yii\web\View $this */
+
+use frontend\widgets\CategoryProductWidget\CategoryProductWidget;
 
 $this->title = 'My Yii Application';
 ?>
@@ -10,7 +11,7 @@ $this->title = 'My Yii Application';
     <div class="container">
         <div class="row">
             <div class="col-md-3">
-                <?= $this->render('../layouts/_partials/category-menu'); ?>
+                <?= CategoryProductWidget::widget() ?>
             </div>
             <div class="col-md-9">
                 <!-- slider -->

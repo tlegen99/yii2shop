@@ -16,6 +16,7 @@ class m240714_185225_create_categories_product_table extends Migration
             'id' => $this->primaryKey(),
             'parent_id' => $this->integer()->defaultValue(null),
             'title' => $this->string(100)->notNull(),
+            'status' => "ENUM('on', 'off') NOT NULL DEFAULT 'on'"
         ]);
 
         $this->addForeignKey(
