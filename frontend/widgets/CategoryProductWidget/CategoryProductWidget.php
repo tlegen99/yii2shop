@@ -7,10 +7,14 @@ use yii\base\Widget;
 
 class CategoryProductWidget extends Widget
 {
+    public $parentId = null;
+
     public function run()
     {
-        $categories = CategoryProduct::find()->all();
+        $categories = CategoryProduct::find()->where(['parent_id' => $this->parentId])->all();
 
-        return $this->render('category-menu', ['categories' => $categories]);
+        return $this->render('category-menu',
+            ['categories' => $categories]
+        );
     }
 }

@@ -24,6 +24,7 @@ class AppAsset extends AssetBundle
         'css/animate.css',
         'css/main.css',
         'css/style.css',
+        'css/site.css',
         'css/responsive.css',
     ];
 

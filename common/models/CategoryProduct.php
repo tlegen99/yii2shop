@@ -12,7 +12,7 @@ use yii\db\ActiveRecord;
  * @property string $title
  *
  * @property CategoryProduct $parent
- * @property CategoryProduct[] $categories
+ * @property CategoryProduct[] $children
  */
 class CategoryProduct extends ActiveRecord
 {
@@ -67,7 +67,7 @@ class CategoryProduct extends ActiveRecord
      *
      * @return \yii\db\ActiveQuery
      */
-    public function getChild(): \yii\db\ActiveQuery
+    public function getChildren(): \yii\db\ActiveQuery
     {
         return $this->hasMany(CategoryProduct::class, ['parent_id' => 'id']);
     }
